@@ -62,6 +62,10 @@ nav .input-box input {
     padding: 1rem 0;
 }
 
+nav h3 {
+    padding: 3% 0;
+}
+
 .content li,
 .actions {
     margin: 1rem 0;
@@ -159,7 +163,41 @@ button {
 footer {
     background-color: var(--color-secondary);
     color: var(--color-white);
-    padding: 1rem;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+footer h6 {
+    padding: 1rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+.social-links {
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.brand-info .links {
+    font-size: 1.7rem;
+}
+
+.sitemap .links {
+    font-size: 1.3rem;
+}
+
+.sitemap {
+   gap: 5%
+}
+
+footer input::placeholder {
+    color: var(--color-faint-white);
+}
+
+.solid-secondary {
+    color: var(--color-white)
 }
 
 footer p {
@@ -179,14 +217,16 @@ footer p {
         font-size: 12px;
     }
 
-    /* body {
-        height:100vh;
-    } */
+    footer {
+        padding: 2rem;
+    }
 
-   
-
-    .input-box, .brand-name {
+    .input-box, .brand-name,.brand-info, .sitemap, .contact-you {
         flex-grow: 1;
+    }
+
+    .contact-you {
+        margin-top: 2rem;
     }
 
     .fixed {
