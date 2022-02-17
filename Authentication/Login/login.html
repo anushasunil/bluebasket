@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BlueBasket</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="login-page-contents">
+        <nav class="display-align-center display-justify-space-around">
+            <h3 class="brand-name">
+                BlueBasket
+            </h3>
+            <div class="input-box ">
+                <div class="input-icon-container display-align-center">
+                    <i class="fa-solid fa-magnifying-glass inner-icon"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="actions display-align-center">
+                <button class="outline-secondary">
+                    <p>LOG IN</p>
+                </button>
+                <div class="avatar-badge-container">
+                    <div class="badge notification display-align-center display-justify-center">10</div>
+                    <i class="fa-regular fa-heart icon clickable-image"></i>
+                </div>
+                <div class="avatar-badge-container">
+                    <div class="badge notification display-align-center display-justify-center">10</div>
+                    <i class="fa-solid fa-basket-shopping icon clickable-image"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="main-wrapper display-justify-center display-align-center">
+            <!-- <div class="image-container"> -->
+                <img src="/assets/images/ecomm-login.png" alt="header-img" srcset="">
+            <!-- </div> -->
+            <div class="card-container">
+                <div class="card for-login">
+                    <div class="content">
+                        <h3>Log In</h3>
+                        <ul>
+                            <li>
+                                <label for="Email-Address" class="semi-bold">
+                                    Email Address
+                                </label>
+                                <div class="input-box display-flex-column">
+                                    <div class="input-icon-container">
+                                        <input type="email" placeholder="anusha@neog.camp" class="flex-grow">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Password" class="semi-bold">Password</label>
+                                <div class="input-box display-flex-column">
+                                    <div class="input-icon-container">
+                                        <input type="password" placeholder="password" class="flex-grow">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="actions display-align-center display-justify-space-between">
+                            <div class="save-my-info display-align-center">
+                                <input type="checkbox" name="remember-me" class="checkbox">
+                                <p class="bold">Save my Info</p>
+                            </div>
+                            <span>
+                                <p class="bold clickable-image">Forgot your Password?</p>
+                            </span>
+                        </div>
+                        <div class="action-btn display-flex-column">
+                            <button class="solid-primary">
+                                <p class="bold">LOG IN</p>
+                            </button>
+                            <button class="icon-with-text transparent display-align-center display-justify-center">
+                                <p>
+                                    Create New Account
+                                </p>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="fixed">
+            <p class="footer-text text-align-center">created by <a href="https://github.com/anushasunil">anushasunil</a> - @neoGcamp</p>
+        </footer>
+    </div>
+   
+</body>
+
+</html>
