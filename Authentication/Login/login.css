@@ -17,7 +17,7 @@
 }
 
 .main-wrapper img{
-    width:clamp(18rem, 35%, 20rem);
+    width:clamp(18rem, 45%, 25rem);
     margin:0;
 }
 
@@ -43,6 +43,10 @@
 
 .login-page-contents nav {
     padding: 1rem;
+}
+
+nav {
+    gap: 10%
 }
 
 nav .actions {
@@ -78,7 +82,8 @@ nav input::placeholder {
 
 .card {
     padding: 1rem;
-    min-width: 30%;
+    min-width: 50%;
+    /* width:150%; */
 }
 
 .card h3 {
