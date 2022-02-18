@@ -1,0 +1,255 @@
+@import url(/Utility/utility.css);
+
+.login-page-contents {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    flex-grow: 1;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.main-wrapper .image-wrapper {
+    width: fit-content;
+}
+
+.main-wrapper img{
+    width:clamp(18rem, 45%, 25rem);
+    margin:0;
+}
+
+.inner-icon {
+    padding: 1rem;
+}
+
+.icon {
+    color: var(--color-light-gray);
+    font-size: 2rem;
+}
+
+.inner-icon {
+    color: var(--color-light-gray);
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.login-page-contents .notification {
+    font-size: 1rem;
+    right: -1.2rem;
+}
+
+nav {
+    gap: 8%;
+}
+
+nav .actions {
+    gap: 2rem;
+}
+
+nav .input-box {
+    /* width: fit-content; */
+    min-width:30%;
+}
+
+nav .input-box input {
+    padding: 1rem 0;
+}
+
+nav h3 {
+    padding: 3%;
+}
+
+.content li,
+.actions {
+    margin: 1rem 0;
+}
+
+.input-box input {
+    padding: 12px;
+}
+
+.input-box {
+    padding: 1rem 0;
+}
+
+.input-icon-container {
+    flex-wrap: nowrap;
+    border-radius: 0;
+}
+
+nav input::placeholder {
+    font-size: 1.4rem;
+}
+
+.card {
+    padding: 1rem;
+    min-width: 50%;
+    /* width:150%; */
+}
+
+.card h3 {
+    padding: 1rem 0;
+}
+
+.save-my-info {
+    gap: 8px;
+}
+
+.actions {
+    padding: 0 8px;
+}
+
+.actions span p,
+.save-my-info p {
+    font-size: 1.1rem;
+}
+
+.actions span {
+    color: var(--color-tertiary);
+    border-bottom: 2px solid var(--color-reset);
+}
+
+.save-my-info {
+    /* color: var(--color-accent); */
+    font-size: 1.3rem;
+
+}
+
+button {
+    border-radius: 0;
+    box-shadow: var(--shadow-mild);
+}
+
+.action-btn button {
+    box-shadow: none;
+}
+
+.action-btn button:active {
+    top: 0;
+    border: 2px solid black;
+}
+
+.solid-primary:hover {
+    background-color: var(--color-tertiary-light);
+    color: var(--color-primary)
+}
+
+.transparent button p {
+    text-decoration: underline;
+}
+
+.outline-secondary {
+    padding: 12px 20px;
+}
+
+.icon-with-text {
+    background-color: var(--color-reset);
+}
+
+.icon-with-text p {
+    gap: 1rem;
+    font-size: 1.2rem;
+    ;
+}
+
+.icon-with-text p:hover {
+    border-bottom: 1px solid;
+    transition: 0.4s;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+footer h6 {
+    padding: 1rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+.social-links {
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.brand-info .links {
+    font-size: 1.7rem;
+}
+
+.sitemap .links {
+    font-size: 1.3rem;
+}
+
+.sitemap {
+   gap: 1rem
+}
+
+footer input {
+    color: var(--color-white);
+}
+
+footer input::placeholder {
+    color: var(--color-faint-white);
+}
+
+.solid-secondary {
+    color: var(--color-white)
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@media (max-width:900px) {
+    html {
+        font-size:14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-you {
+        margin-top: 2rem;
+    }
+
+    footer {
+        padding:2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    nav {
+        padding: 2rem;
+    }
+
+    .input-box, .brand-name,.brand-info, .sitemap, .contact-you {
+        flex-grow: 1;
+    }
+
+    .fixed {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
