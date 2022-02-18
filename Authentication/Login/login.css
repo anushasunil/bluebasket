@@ -41,16 +41,12 @@
     right: -1.2rem;
 }
 
-.login-page-contents nav {
-    padding: 1rem;
-}
-
 nav {
-    gap: 10%
+    gap: 8%;
 }
 
 nav .actions {
-    gap: 3rem
+    gap: 2rem;
 }
 
 nav .input-box {
@@ -63,7 +59,7 @@ nav .input-box input {
 }
 
 nav h3 {
-    padding: 3% 0;
+    padding: 3%;
 }
 
 .content li,
@@ -73,6 +69,10 @@ nav h3 {
 
 .input-box input {
     padding: 12px;
+}
+
+.input-box {
+    padding: 1rem 0;
 }
 
 .input-icon-container {
@@ -163,7 +163,7 @@ button {
 footer {
     background-color: var(--color-secondary);
     color: var(--color-white);
-    padding: 1%;
+    padding: 2rem;
     flex-wrap: wrap;
 }
 
@@ -189,7 +189,11 @@ li {
 }
 
 .sitemap {
-   gap: 5%
+   gap: 1rem
+}
+
+footer input {
+    color: var(--color-white);
 }
 
 footer input::placeholder {
@@ -211,22 +215,35 @@ footer p {
     right: 0;
 }
 
+
+@media (max-width:900px) {
+    html {
+        font-size:14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-you {
+        margin-top: 2rem;
+    }
+
+    footer {
+        padding:2rem 1rem;
+    }
+}
+
 @media (max-width: 480px) {
 
     html {
         font-size: 12px;
     }
 
-    footer {
+    nav {
         padding: 2rem;
     }
 
     .input-box, .brand-name,.brand-info, .sitemap, .contact-you {
         flex-grow: 1;
-    }
-
-    .contact-you {
-        margin-top: 2rem;
     }
 
     .fixed {
