@@ -50,7 +50,6 @@ nav .actions {
 }
 
 nav .input-box {
-    /* width: fit-content; */
     min-width: 30%;
 }
 
@@ -154,12 +153,10 @@ button {
 .icon-with-text p {
     gap: 1rem;
     font-size: 1.2rem;
-    ;
 }
 
 .icon-with-text p:hover {
     border-bottom: 1px solid;
-    transition: 0.4s;
 }
 
 footer {
@@ -208,13 +205,6 @@ footer input::placeholder {
 
 footer p {
     font-size: 1.2rem;
-}
-
-.fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 
