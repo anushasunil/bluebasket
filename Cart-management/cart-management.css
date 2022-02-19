@@ -218,14 +218,11 @@ footer p {
     }
 }
 
-
-@media (max-width:900px) {
+@media (max-width: 900px) {
     html {
         font-size:14px;
     }
-}
 
-@media (max-width: 600px) {
     .contact-you {
         margin-top: 2rem;
         font-size: 1.3rem
