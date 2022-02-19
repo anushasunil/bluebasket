@@ -157,7 +157,6 @@ button {
 
 .icon-with-text p:hover {
     border-bottom: 1px solid;
-    transition: 0.4s;
 }
 
 footer {
