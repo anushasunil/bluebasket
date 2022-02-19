@@ -1,0 +1,36 @@
+@import url(https://mondayblues.netlify.app/stylesheets/main.css);
+
+:root {
+    /* colors */
+    --color-light-gray : #333333bb;
+    --color-faint-white: #ffffff85;
+
+    /* shadow */
+    --shadow-mild:0 3px 1px -1px #0003, 0 2px 5px #00000024, 0 1px 5px #0000001f
+}
+
+
+body {
+    background-color: var(--color-white);
+}
+
+.display-justify-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container {
+    width: fit-content;
+}
+
+.position-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* typography */ 
+p {
+    font-size: 1rem;
+}
