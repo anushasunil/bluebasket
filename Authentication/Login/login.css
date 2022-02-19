@@ -1,7 +1,7 @@
 @import url(/Utility/utility.css);
 
 .login-page-contents {
-    height:100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -16,9 +16,9 @@
     width: fit-content;
 }
 
-.main-wrapper img{
-    width:clamp(18rem, 45%, 25rem);
-    margin:0;
+.main-wrapper img {
+    width: clamp(18rem, 45%, 25rem);
+    margin: 0;
 }
 
 .inner-icon {
@@ -51,7 +51,7 @@ nav .actions {
 
 nav .input-box {
     /* width: fit-content; */
-    min-width:30%;
+    min-width: 30%;
 }
 
 nav .input-box input {
@@ -75,6 +75,11 @@ nav h3 {
     padding: 1rem 0;
 }
 
+.input-box button {
+    padding: 1.1rem;
+    outline: none;
+}
+
 .input-icon-container {
     flex-wrap: nowrap;
     border-radius: 0;
@@ -87,7 +92,6 @@ nav input::placeholder {
 .card {
     padding: 1rem;
     min-width: 50%;
-    /* width:150%; */
 }
 
 .card h3 {
@@ -113,9 +117,7 @@ nav input::placeholder {
 }
 
 .save-my-info {
-    /* color: var(--color-accent); */
     font-size: 1.3rem;
-
 }
 
 button {
@@ -189,7 +191,7 @@ li {
 }
 
 .sitemap {
-   gap: 1rem
+    gap: 1rem
 }
 
 footer input {
@@ -218,7 +220,7 @@ footer p {
 
 @media (max-width:900px) {
     html {
-        font-size:14px;
+        font-size: 14px;
     }
 }
 
@@ -228,7 +230,7 @@ footer p {
     }
 
     footer {
-        padding:2rem 1rem;
+        padding: 2rem 1rem;
     }
 }
 
@@ -242,7 +244,11 @@ footer p {
         padding: 2rem;
     }
 
-    .input-box, .brand-name,.brand-info, .sitemap, .contact-you {
+    .input-box,
+    .brand-name,
+    .brand-info,
+    .sitemap,
+    .contact-you {
         flex-grow: 1;
     }
 
