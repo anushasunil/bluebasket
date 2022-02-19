@@ -75,6 +75,11 @@ nav h3 {
     padding: 1rem 0;
 }
 
+.input-box button {
+    padding: 1.1rem;
+    outline: none;
+}
+
 .input-icon-container {
     flex-wrap: nowrap;
     border-radius: 0;
