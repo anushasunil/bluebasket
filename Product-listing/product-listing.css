@@ -8,10 +8,6 @@
     /* position: relative; */
 }
 
-.inner-icon {
-    padding: 1rem;
-}
-
 .icon {
     color: var(--color-light-gray);
     font-size: 2rem;
