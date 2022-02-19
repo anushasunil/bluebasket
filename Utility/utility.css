@@ -20,6 +20,11 @@ body {
     justify-content: space-around;
 }
 
+.display-justify-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .image-container {
     width: fit-content;
 }
