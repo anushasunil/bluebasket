@@ -1,5 +1,9 @@
 @import url(/Utility/utility.css);
 
+.wishlist-page-content {
+    height:100vh;
+}
+
 .icon {
     color: var(--color-light-gray);
     font-size: 2rem;
