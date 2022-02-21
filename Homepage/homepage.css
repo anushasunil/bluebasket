@@ -189,6 +189,10 @@ li p {
 
 @media (max-width: 1260px) {
 
+    .template h6 {
+        font-size: 1.6rem;
+    }
+
     .particular-content {
         flex-wrap: wrap;
     }
