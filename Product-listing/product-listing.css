@@ -1,0 +1,440 @@
+@import url(/Utility/utility.css);
+
+
+.product-listing-page-contents {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-icon {
+    padding: 1rem;
+}
+
+.icon {
+    color: var(--color-light-gray);
+    font-size: 2rem;
+}
+
+.input-box button {
+    padding: 1.2rem;
+    outline: none;
+}
+
+.inner-icon {
+    color: var(--color-light-gray);
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.product-listing-page-contents .notification {
+    font-size: 1rem;
+    right: -1.2rem;
+}
+
+nav {
+    gap: 8%;
+    position: static;
+    z-index: 5;
+}
+
+
+nav .actions {
+    gap: 2rem;
+    padding: 0 2%;
+}
+
+nav .input-box {
+    min-width:30%;
+}
+
+nav .input-box input {
+    padding: 1rem 0;
+}
+
+nav h3 {
+    padding: 2%;
+}
+
+.content li,
+.actions {
+    margin: 1rem 0;
+}
+
+.input-box input {
+    padding: 12px;
+}
+
+.input-box {
+    padding: 1rem 0;
+}
+
+.input-icon-container {
+    flex-wrap: nowrap;
+    border-radius: 0;
+}
+
+nav input::placeholder {
+    font-size: 1.4rem;
+}
+
+.outline-secondary {
+    padding: 12px 20px;
+}
+
+.main-wrapper {
+    padding:2rem;
+    width:100%;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr;
+}
+
+.filter {
+    position: sticky;
+    top:0;
+    height: fit-content;
+    padding: 0 2rem;
+    z-index: 3;
+    background-color: var(--color-white);
+}
+
+.hamburger-nav {
+    margin: 0 1rem 0 8px;
+    display:none;
+}
+
+.bars {
+    width:30px;
+    height:5px;
+    margin-bottom:3px;
+    border-radius: var(--container-border);
+    background-color: var(--color-primary);
+}
+
+.aside-film {
+    background-color: rgba(61, 61, 61, 0.438);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:none;
+    z-index: 8;
+}
+
+.mobile {
+    background-color: var(--color-white);
+    padding-top:2rem;
+    width: 22rem;
+    position: fixed;
+    top:0;
+    bottom:0;
+    z-index: 9;
+    transform: translateX(-22rem);
+    transition: transform .3s ease-in;
+    overflow-x: auto;
+}
+
+.mobile .aside-contents {
+    padding: 2rem 
+}
+
+.mobile::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile .aside-heading {
+    margin:0 2rem 1rem 1.5rem;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    border-bottom: 1px solid;
+}
+
+.component-redirect {
+    overflow: auto;
+    padding: 0 1rem 0 1rem;
+}
+
+.component {
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    width:65%;
+}
+
+.component:hover {
+    background-color:var(--color-tertiary);
+    color: var(--color-primary);
+    transition:0.7s;
+    width:90%;
+}
+
+.component-name {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.component:hover .component-name {
+    font-weight: 700;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+input[type="range"] {
+    accent-color: var(--color-tertiary-light);
+     background: transparent;
+     cursor: pointer;
+     width: 100%;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+.filter-dropdown {
+    display:none
+}
+
+.filter-contents {
+    padding-bottom: 5rem;
+    display: block;
+    overflow-y: auto;
+}
+
+section h6 {
+    padding: 8px 0;
+}
+
+label {
+    font-weight: 500;
+    color: var(--color-secondary-light)
+}
+
+.product-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 26rem));
+    row-gap:1rem;
+    border-left: 1px solid
+}
+
+.card {
+    justify-self: center;
+    width:25rem;
+    box-shadow: var(--shadow-mild);
+}
+
+.content {
+    font-size:13px;
+}
+
+.content h3, .content h4 {
+    font-size: 170%;
+}
+
+
+.card img {
+    width: 60%;
+}
+
+.star-img {
+    color: orange;
+}
+
+button {
+    border-radius: 0;
+    box-shadow: var(--shadow-mild);
+}
+
+.button-icons {
+    font-size: 1rem;
+}
+
+.solid-secondary, .solid-primary {
+   flex-wrap: nowrap;
+   justify-content: center;
+   width:fit-content;
+}
+
+.solid-secondary {
+    justify-self: flex-end;
+}
+
+.solid-icon-only {
+    position: sticky;
+    bottom:1rem;
+    left:88vw;
+    font-size:1.2rem;
+    width:fit-content;
+    height:fit-content;
+    padding: 1rem 1.2rem;
+    color: var(--color-white);
+    border-radius: var(--circle-border);
+    z-index:8;
+    margin-top: 1rem;
+    display:none;
+}
+
+
+.action-tab .actions{
+    display:grid;
+    grid-template-columns: 1fr 40%;
+}
+
+footer {
+    position: sticky;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+footer h6 {
+    padding: 1rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+.social-links {
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.brand-info .links {
+    font-size: 1.7rem;
+}
+
+.sitemap .links {
+    font-size: 1.3rem;
+}
+
+.sitemap {
+   gap: 1rem
+}
+
+footer input {
+    color: var(--color-white);
+}
+
+footer input::placeholder {
+    color: var(--color-faint-white);
+}
+
+.solid-secondary {
+    color: var(--color-white)
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+@media (max-width:900px) {
+    html {
+        font-size:15px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .main-wrapper.grid-container {
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        padding:0;
+    }
+
+    .product-display {
+        border:none
+    } 
+
+    .filter {
+        padding: 1rem 3rem;
+        width: 100%;
+    }
+
+    .filter .heading {
+        justify-content:flex-end;
+    }
+
+    .responsive-header {
+        display:none;
+    }
+
+    .filter-film {
+        content:"";
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index: 3;
+        display:none;
+    }
+
+    .solid-icon-only {
+        display:block;
+    }
+
+    .filter-dropdown {
+        display:block;
+        z-index: 5;
+    }
+
+    .filter-contents {
+        overflow-y: auto;
+       display: none;
+       z-index: 5;
+    }
+
+    .filter {
+        display:none;
+    }
+
+    .hamburger-nav {
+        display:block;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-you {
+        margin-top: 2rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        padding:2rem 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    nav {
+        padding: 2rem;
+    }
+
+    .input-box, .brand-name,.brand-info, .sitemap, .contact-you {
+        flex-grow: 1;
+    }
+
+}
