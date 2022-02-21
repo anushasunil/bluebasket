@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | BlueBasket</title>
+    <title>SignUp | BlueBasket</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
-    <div class="login-page-contents">
+    <div class="signup-page-contents">
         <nav class="display-align-center display-justify-space-around">
             <h3 class="brand-name">
                 BlueBasket
@@ -18,36 +18,31 @@
             <div class="input-box ">
                 <div class="input-icon-container display-align-center">
                     <i class="fa-solid fa-magnifying-glass inner-icon"></i>
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search" class="flex-grow">
+                    <button class="solid-secondary">Search</button>
                 </div>
             </div>
             <div class="actions display-align-center">
                 <button class="outline-secondary">
-                    <p>LOG IN</p>
+                   <a href="/Authentication/Login/login.html"><p>LOG IN</p></a>
                 </button>
                 <div class="avatar-badge-container">
-                    <!-- <div class="badge notification display-align-center display-justify-center">10</div> -->
                     <i class="fa-regular fa-heart icon clickable-image"></i>
                 </div>
                 <div class="avatar-badge-container">
-                    <!-- <div class="badge notification display-align-center display-justify-center">10</div> -->
                     <i class="fa-solid fa-basket-shopping icon clickable-image"></i>
                 </div>
             </div>
         </nav>
         <div class="main-wrapper display-justify-center display-align-center">
-            <!-- <div class="image-container"> -->
-                <img src="/assets/images/ecomm-login.png" alt="header-img" srcset="">
-            <!-- </div> -->
+            <img src="/assets/images/ecomm-login.png" alt="header-img">
             <div class="card-container">
                 <div class="card for-login">
                     <div class="content">
                         <h3>Sign Up</h3>
                         <ul>
                             <li>
-                                <label for="Email-Address" class="semi-bold">
-                                    Email Address
-                                </label>
+                                <label for="Email-Address" class="semi-bold">Email</label>
                                 <div class="input-box display-flex-column">
                                     <div class="input-icon-container">
                                         <input type="email" placeholder="anusha@neog.camp" class="flex-grow">
@@ -55,10 +50,36 @@
                                 </div>
                             </li>
                             <li>
-                                <label for="Password" class="semi-bold">Password</label>
+                                <label for="Email-Address" class="semi-bold"> First Name</label>
                                 <div class="input-box display-flex-column">
                                     <div class="input-icon-container">
+                                        <input type="email" placeholder="first name" class="flex-grow">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Email-Address" class="semi-bold"> Last Name</label>
+                                <div class="input-box display-flex-column">
+                                    <div class="input-icon-container">
+                                        <input type="email" placeholder="last name" class="flex-grow">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Password" class="semi-bold">Password</label>
+                                <div class="input-box display-flex-column">
+                                    <div class="input-icon-container display-align-center">
                                         <input type="password" placeholder="password" class="flex-grow">
+                                        <i class="fa-solid fa-eye inner-icon"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Password" class="semi-bold">Confirm Password</label>
+                                <div class="input-box display-flex-column">
+                                    <div class="input-icon-container">
+                                        <input type="password" placeholder="re-enter password" class="flex-grow">
+                                        <i class="fa-solid fa-eye inner-icon"></i>
                                     </div>
                                 </div>
                             </li>
@@ -75,7 +96,7 @@
                             </button>
                             <button class="icon-with-text transparent display-align-center display-justify-center">
                                 <p>
-                                   <a href="/Authentication/Login/login.html">Already have an account</a>
+                                    <a href="/Authentication/Login/login.html">Already have an account</a>
                                 </p>
                                 <i class="fa-solid fa-angle-right"></i>
                             </button>
@@ -86,14 +107,13 @@
         </div>
         <footer class=" display-justify-space-around display-align-center">
             <div class="brand-info">
-
                 <h6>BlueBasket</h6>
                 <p>Copyright © 2022</p>
                 <p>All rights reserved</p>
                 <div class="social-links display-align-center">
-                   <a href="#" class="links"><i class="fa-brands fa-github"></i></a>
-                   <a href="#" class="links"><i class="fa-brands fa-instagram"></i></a>
-                   <a href="#" class="links"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="links"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="links"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="links"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
             <div class="sitemap display-flex-column">
@@ -118,7 +138,6 @@
             </div>
         </footer>
     </div>
-   
 </body>
 
 </html>
