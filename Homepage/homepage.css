@@ -153,6 +153,10 @@ li p {
     right:0
 }
 
+.particular-content .content {
+    min-width: 30rem;
+}
+
 .content-name {
     position: absolute;
     padding: 5rem;
@@ -183,52 +187,7 @@ li p {
     display: inline-block;
 }
 
-@media (max-width: 900px) {
-    html {
-        font-size: 14px;
-    }
-
-    .content-name h4{
-        font-size: 1.2rem;
-    }
-
-    .one .content-name p, .two .content-name p{
-        width: 100%;
-        font-size: 12px;
-    }
-
-    .two .background-two{
-       left:3rem;
-       width: 87%;
-    }
-
-    .content-name {
-        padding: 2rem
-    }
-
-    .template h6 {
-        font-size: 2rem;
-    }
-    
-    .template.one h6 {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 680px) {
-
-    .template-group {
-        flex-wrap: wrap;
-    }
-    
-    .template.two {
-        width: 40%;
-        height:60%;
-    }
-
-     html {
-        font-size:14px;
-    }
+@media (max-width: 1260px) {
 
     .particular-content {
         flex-wrap: wrap;
@@ -262,6 +221,53 @@ li p {
 
     .two .content {
         order: 3;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+
+    .content-name h4{
+        font-size: 1.2rem;
+    }
+
+    .one .content-name p, .two .content-name p{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .two .background-two{
+       left:3rem;
+       width: 87%;
+    }
+
+    .content-name {
+        padding: 2rem
+    }
+
+    .template h6 {
+        font-size: 2rem;
+    }
+    
+    .template.one h6 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .template-group {
+        flex-wrap: wrap;
+    }
+    
+    .template.two {
+        width: 40%;
+        height:60%;
+    }
+
+     html {
+        font-size:14px;
     }
 
     .contact-you {
