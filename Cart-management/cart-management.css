@@ -11,6 +11,11 @@
     padding: 1rem;
 }
 
+.input-box button {
+    padding: 1.2rem;
+    outline: none;
+}
+
 button {
     border-radius: 0;
     box-shadow: var(--shadow-mild);
