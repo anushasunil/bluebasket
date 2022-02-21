@@ -21,73 +21,6 @@
     margin: 0;
 }
 
-.inner-icon {
-    padding: 1rem;
-}
-
-.icon {
-    color: var(--color-light-gray);
-    font-size: 2rem;
-}
-
-.inner-icon {
-    color: var(--color-light-gray);
-    font-size: 1.3rem;
-    padding: 1rem;
-}
-
-.login-page-contents .notification {
-    font-size: 1rem;
-    right: -1.2rem;
-}
-
-nav {
-    gap: 8%;
-}
-
-nav .actions {
-    gap: 2rem;
-}
-
-nav .input-box {
-    min-width: 30%;
-}
-
-nav .input-box input {
-    padding: 1rem 0;
-}
-
-nav h3 {
-    padding: 3%;
-}
-
-.content li,
-.actions {
-    margin: 1rem 0;
-}
-
-.input-box input {
-    padding: 12px;
-}
-
-.input-box {
-    padding: 1rem 0;
-}
-
-.input-box button {
-    padding: 1.2rem;
-    outline: none;
-}
-
-.input-icon-container {
-    flex-wrap: nowrap;
-    border-radius: 0;
-}
-
-nav input::placeholder {
-    font-size: 1.4rem;
-}
-
 .card {
     padding: 1rem;
     min-width: 50%;
@@ -158,55 +91,6 @@ button {
 .icon-with-text p:hover {
     border-bottom: 1px solid;
 }
-
-footer {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-footer h6 {
-    padding: 1rem 0;
-}
-
-li {
-    list-style: none;
-}
-
-.social-links {
-    gap: 1rem;
-    padding-top: 1rem;
-}
-
-.brand-info .links {
-    font-size: 1.7rem;
-}
-
-.sitemap .links {
-    font-size: 1.3rem;
-}
-
-.sitemap {
-    gap: 1rem
-}
-
-footer input {
-    color: var(--color-white);
-}
-
-footer input::placeholder {
-    color: var(--color-faint-white);
-}
-
-.solid-secondary {
-    color: var(--color-white)
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
 
 @media (max-width:900px) {
     html {
