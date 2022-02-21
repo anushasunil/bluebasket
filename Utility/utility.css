@@ -5,6 +5,7 @@
     /* colors */
     --color-light-gray : #333333bb;
     --color-faint-white: #ffffff85;
+    --color-orange: orange;
 
     /* shadow */
     --shadow-mild:0 3px 1px -1px #0003, 0 2px 5px #00000024, 0 1px 5px #0000001f
@@ -34,6 +35,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+li {
+    list-style: none;
 }
 
 /* typography */ 

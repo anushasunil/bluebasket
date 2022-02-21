@@ -99,7 +99,7 @@ nav input::placeholder {
 }
 
 .star-img {
-    color: orange;
+    color: var(--color-orange);
 }
 
 .quantity-counter {
@@ -171,10 +171,6 @@ footer {
 
 footer h6 {
     padding: 1rem 0;
-}
-
-li {
-    list-style: none;
 }
 
 .social-links {
