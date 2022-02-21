@@ -7,6 +7,10 @@
     flex-direction: column;
 }
 
+.nav-brand {
+    flex-wrap: nowrap;
+}
+
 .outline-secondary {
     padding: 12px 20px;
 }
@@ -28,7 +32,7 @@
 }
 
 .hamburger-nav {
-    margin: 0 1rem 0 8px;
+    margin: 0 1rem 0 2rem;
     display:none;
 }
 
