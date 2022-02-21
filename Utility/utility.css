@@ -51,6 +51,9 @@ p {
     font-size: 1rem;
 }
 
+.brand-name,.brand-info h6 {
+    font-family: 'Playfair Display', serif;
+}
 
 /* nav */ 
 
