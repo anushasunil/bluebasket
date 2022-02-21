@@ -4,7 +4,8 @@
     height: 100vh;
 }
 
-.brand-name, .template h6, .particular-content h4 {
+
+.brand-name,.brand-info h6, .template h6, .particular-content h4 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -25,6 +26,11 @@
     color: var(--color-light-gray);
     font-size: 1.3rem;
     padding: 1rem;
+}
+
+.input-box button {
+    padding: 1.2rem;
+    outline: none;
 }
 
 button {
