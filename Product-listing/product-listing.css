@@ -5,12 +5,16 @@
     height:100vh;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
 }
 
 .icon {
     color: var(--color-light-gray);
     font-size: 2rem;
+}
+
+.input-box button {
+    padding: 1.2rem;
+    outline: none;
 }
 
 .inner-icon {
@@ -81,7 +85,7 @@ nav input::placeholder {
     grid-template-rows: 1fr;
 }
 
-aside {
+.filter {
     position: sticky;
     top:0;
     height: fit-content;
@@ -90,14 +94,93 @@ aside {
     background-color: var(--color-white);
 }
 
+.hamburger-nav {
+    margin: 0 1rem 0 8px;
+    display:none;
+}
+
+.bars {
+    width:30px;
+    height:5px;
+    margin-bottom:3px;
+    border-radius: var(--container-border);
+    background-color: var(--color-primary);
+}
+
+.aside-film {
+    background-color: rgba(61, 61, 61, 0.438);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:none;
+    z-index: 8;
+}
+
+.mobile {
+    background-color: var(--color-white);
+    padding-top:2rem;
+    width: 22rem;
+    position: fixed;
+    top:0;
+    bottom:0;
+    z-index: 9;
+    transform: translateX(-22rem);
+    transition: transform .3s ease-in;
+    overflow-x: auto;
+}
+
+.mobile .aside-contents {
+    padding: 2rem 
+}
+
+.mobile::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile .aside-heading {
+    margin:0 2rem 1rem 1.5rem;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    border-bottom: 1px solid;
+}
+
+.component-redirect {
+    overflow: auto;
+    padding: 0 1rem 0 1rem;
+}
+
+.component {
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    width:65%;
+}
+
+.component:hover {
+    background-color:var(--color-tertiary);
+    color: var(--color-primary);
+    transition:0.7s;
+    width:90%;
+}
+
+.component-name {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.component:hover .component-name {
+    font-weight: 700;
+}
+
 section {
     padding: 1rem 0;
 }
 
 input[type="range"] {
     accent-color: var(--color-tertiary-light);
-    /* -webkit-appearance: none; */
-     /* appearance: none; */
      background: transparent;
      cursor: pointer;
      width: 100%;
@@ -114,6 +197,7 @@ input[type="range"]:focus {
 .filter-contents {
     padding-bottom: 5rem;
     display: block;
+    overflow-y: auto;
 }
 
 section h6 {
@@ -201,7 +285,6 @@ footer {
     color: var(--color-white);
     padding: 2rem;
     flex-wrap: wrap;
-    /* z-index: 6 */
 }
 
 footer h6 {
@@ -264,21 +347,20 @@ footer p {
     .main-wrapper.grid-container {
         display:flex;
         flex-direction: column;
-        border-top: 1px solid var(--color-accent-light);
         position:relative;
         padding:0;
     }
 
     .product-display {
         border:none
-    }
+    } 
 
-    aside {
+    .filter {
         padding: 1rem 3rem;
         width: 100%;
     }
 
-    aside .heading {
+    .filter .heading {
         justify-content:flex-end;
     }
 
@@ -312,6 +394,14 @@ footer p {
        display: none;
        z-index: 5;
     }
+
+    .filter {
+        display:none;
+    }
+
+    .hamburger-nav {
+        display:block;
+    }
 }
 
 @media (max-width: 600px) {
@@ -326,6 +416,7 @@ footer p {
     footer {
         padding:2rem 1rem;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -341,10 +432,5 @@ footer p {
     .input-box, .brand-name,.brand-info, .sitemap, .contact-you {
         flex-grow: 1;
     }
-
-    .product-display {
-        grid-template-columns: 1fr;
-    }
-
 
 }
