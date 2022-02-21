@@ -15,6 +15,11 @@
     padding: 1rem;
 }
 
+.input-box button {
+    padding: 1.2rem;
+    outline: none;
+}
+
 button {
     border-radius: 0;
     box-shadow: var(--shadow-mild);
@@ -62,7 +67,6 @@ nav h3 {
 nav input::placeholder {
     font-size: 1.4rem;
 }
-
 
 .content li,
 .actions {
@@ -119,7 +123,7 @@ nav input::placeholder {
 }
 
 .star-img {
-    color: orange;
+    color: var(--color-orange);
 }
 
 .like-badge {
@@ -143,10 +147,6 @@ footer {
 
 footer h6 {
     padding: 1rem 0;
-}
-
-li {
-    list-style: none;
 }
 
 .social-links {

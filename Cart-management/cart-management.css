@@ -11,6 +11,11 @@
     padding: 1rem;
 }
 
+.input-box button {
+    padding: 1.2rem;
+    outline: none;
+}
+
 button {
     border-radius: 0;
     box-shadow: var(--shadow-mild);
@@ -94,7 +99,7 @@ nav input::placeholder {
 }
 
 .star-img {
-    color: orange;
+    color: var(--color-orange);
 }
 
 .quantity-counter {
@@ -166,10 +171,6 @@ footer {
 
 footer h6 {
     padding: 1rem 0;
-}
-
-li {
-    list-style: none;
 }
 
 .social-links {
